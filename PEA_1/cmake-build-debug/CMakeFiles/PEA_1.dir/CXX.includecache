@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lebrenzi/CLionProjects/PEA_1/Graph.cpp
+cstdlib
+-
+stdlib.h
+-
+iostream
+-
+climits
+-
+cmath
+-
+Graph.h
+/home/lebrenzi/CLionProjects/PEA_1/Graph.h
+
+/home/lebrenzi/CLionProjects/PEA_1/Graph.h
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+stack
+-
+
