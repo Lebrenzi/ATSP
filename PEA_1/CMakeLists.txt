@@ -3,4 +3,4 @@ project(PEA_1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(PEA_1 main.cpp City.cpp City.h Graph.cpp Graph.h Set.cpp Set.h)
+add_executable(PEA_1 main.cpp Graph.cpp Graph.h)

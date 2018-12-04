@@ -10,6 +10,9 @@
 #include <string>
 #include <fstream>
 #include <stack>
+#include <random>
+#include <algorithm>
+
 using namespace std;
 
 class Graph {
@@ -20,8 +23,8 @@ private:
     int cost_second;
     stack<int> primary;
     stack<int> secondary;
-    vector< vector<unsigned short > > weighs;
-    vector< vector< vector< unsigned short > > > dp;
+    vector< vector<int > > weighs;
+    vector< vector< vector< int > > > dp;
     int VISITED_ALL_BITMAP;
     void setGraph(int);
 public:
@@ -33,7 +36,18 @@ public:
     void ShowGraph();
     void showBestPath(int choose); // 1 for BF, 2 for DP
     void menu();
+    void test();
 
+
+    //Local Search Algorythm
+    int simulatedAnnealing(float initial_temperature,float end_temperature);
+    float decreaseTemperature(float initial_temperature);
+    vector<int> generateStateCandidate(vector<int> &initial_state);
+    int calculateEnergy(vector<int> initial_state);
+    float getTransitionProbabilty(int delta_energy, float temperature);
+    bool makeTransit(float initial_transition_probability);
+
+    //Accurate Algorythms
     void trackPath();
     void bruteForceTest(int pos, int bitmask);
     int dynamicProgramming(int start, int bitmap);

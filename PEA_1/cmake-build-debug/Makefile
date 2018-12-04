@@ -123,33 +123,6 @@ PEA_1/fast:
 	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/build
 .PHONY : PEA_1/fast
 
-City.o: City.cpp.o
-
-.PHONY : City.o
-
-# target to build an object file
-City.cpp.o:
-	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/City.cpp.o
-.PHONY : City.cpp.o
-
-City.i: City.cpp.i
-
-.PHONY : City.i
-
-# target to preprocess a source file
-City.cpp.i:
-	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/City.cpp.i
-.PHONY : City.cpp.i
-
-City.s: City.cpp.s
-
-.PHONY : City.s
-
-# target to generate assembly for a file
-City.cpp.s:
-	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/City.cpp.s
-.PHONY : City.cpp.s
-
 Graph.o: Graph.cpp.o
 
 .PHONY : Graph.o
@@ -176,33 +149,6 @@ Graph.s: Graph.cpp.s
 Graph.cpp.s:
 	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/Graph.cpp.s
 .PHONY : Graph.cpp.s
-
-Set.o: Set.cpp.o
-
-.PHONY : Set.o
-
-# target to build an object file
-Set.cpp.o:
-	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/Set.cpp.o
-.PHONY : Set.cpp.o
-
-Set.i: Set.cpp.i
-
-.PHONY : Set.i
-
-# target to preprocess a source file
-Set.cpp.i:
-	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/Set.cpp.i
-.PHONY : Set.cpp.i
-
-Set.s: Set.cpp.s
-
-.PHONY : Set.s
-
-# target to generate assembly for a file
-Set.cpp.s:
-	$(MAKE) -f CMakeFiles/PEA_1.dir/build.make CMakeFiles/PEA_1.dir/Set.cpp.s
-.PHONY : Set.cpp.s
 
 main.o: main.cpp.o
 
@@ -240,15 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PEA_1"
-	@echo "... City.o"
-	@echo "... City.i"
-	@echo "... City.s"
 	@echo "... Graph.o"
 	@echo "... Graph.i"
 	@echo "... Graph.s"
-	@echo "... Set.o"
-	@echo "... Set.i"
-	@echo "... Set.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
